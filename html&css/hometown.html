@@ -1,0 +1,107 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="with=device-width", initial-scale="1.0">
+    <title>Ina Song - Hometown</title>
+    <link rel="stylesheet" href="hometown style.css">
+    <link rel="stylesheet" href="text styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <section class="sec-01">
+        <div class="container">
+            <div class="content">
+                <div class="info">
+                    <h2 class="main-title">My hometown, <span>SUWON</span></h2>
+                    <p style="margin-bottom: -20px"> Suwon is the 8th most populous city in South Korea. Home to the headquarters of Samsung Electronics, 
+                        Suwon serves as a key economic center. The city also boasts a wealth of cultural facilities, such as Byeolmadang Library and the Suwon World Cup Stadium, 
+                        making it a convenient and developed place to live.  Alongside these modern amenities, Suwon also houses several beautiful historic sites designated as World Heritage Sites. 
+                        The contrast between its contemporary urban environment and these historic locations offers a refreshing blend of new and old, making it a uniquely attractive city.</p>
+                </div>
+                <div class="image-grid">
+                    <div class="image-sec1"><img src="image/city.png" alt=""></div>
+                    <div class="image-sec1"><img src="image/library.jpg" alt=""></div>
+                    <div class="image-sec1"><img src="image/fortress4.jpg" alt=""></div>
+                    <div class="image-sec1"><img src="image/buildings.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec-02">
+        <div class="container">
+            <h3 class="section-title"><span>UNESCO</span> World Heritage Site</h3>
+            <div class="content">
+                <div class="image">
+                    <a href="https://www.swcf.or.kr/english/?p=31">
+                        <img src="image/fortress2.jpg" alt=""></a>
+                </div>
+                <div class="textbox-3">
+                    <h3>Suwon Fortress</h3>
+                    <p>Suwon Hwaseong Fortress is a historic site built in the late 18th century. Designed both as a defensive structure and a royal retreat, it features extensive walls, gates, and watchtowers showcasing traditional Korean architecture. 
+                        Click the picture on the left to learn more about Suwon fortress, recognized as a UNESCO World Heritage Site!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec-03">
+        <div class="container">
+            <div class="content">
+                <div class="info">
+                    <h3 class="section-title" >"City of <span>Flavour</span>"</h3>
+                    <p style="margin-top: -20px">Suwon is celebrated for its distinctive local cuisine, notably Suwon Wang Galbi (king-sized beef ribs), Suwon Tongdak (crispy fried chicken), and Sundae Bokkeum (stir-fried Korean sausage). 
+                        Each dish offers a unique taste that embodies the culinary spirit of the city. 
+                        For a closer look at these famous foods, click on the small images below. 
+                        If you're interested in learning more about the city of Suwon, click 'Learn More'.
+                    </p>
+                    <a href="https://en.wikipedia.org/wiki/Suwon">Learn More</a>   
+                </div> 
+                <div class="imgBox">
+                    <img src="image/chicken.png" class="food" alt="">
+                </div>
+            </div>
+            <ul class="thumb">
+                <li><a href="#sec-03"><img src="image/thumb1.png" onclick="imgSlider('image/plate.png')"></a></li>
+                <li><a href="#sec-03"><img src="image/thumb2.png" onclick="imgSlider('image/beef.png')"></a></li>
+                <li><a href="#sec-03"><img src="image/thumb3.png" onclick="imgSlider('image/chicken.png')"></a></li>
+            </ul>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.food').src = anything;
+        }
+
+    </script>
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '60px',
+            duration: 2500,
+            delay: 400
+        });
+
+        ScrollReveal().reveal('.main-title', {delay: 500, origin: 'top'});
+        ScrollReveal().reveal('.image-grid', {delay: 600, origin: 'bottom'});
+        ScrollReveal().reveal('.sec-01 p', {delay: 750, origin: 'left'});
+        ScrollReveal().reveal('.section-title', {delay: 500, origin: 'left'});
+        ScrollReveal().reveal('.sec-02 .image', {delay: 600, origin: 'top'});
+        ScrollReveal().reveal('.textbox-3', {delay: 700, origin: 'bottom'});
+        ScrollReveal().reveal('.sec-03 .info, .thumb', {delay: 750, origin: 'left'});
+        ScrollReveal().reveal('.imgBox', {
+            delay: 1000,
+            origin: 'bottom',
+            afterReveal: function(el) {
+                el.querySelector('img').classList.add('rotate'); 
+            }
+        });
+
+
+        
+    </script>
+</body>
+</html>

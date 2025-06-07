@@ -1,0 +1,90 @@
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="with=device-width", initial-scale="1.0">
+        <link rel="stylesheet" href="text styles.css">
+        <link rel="stylesheet" href="activity style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+        <style>
+            h2, p{
+                color: black;
+                text-align: justify;
+            }  
+
+            .title span{
+                font-family: "Lora", serif;
+                font-weight: bold;
+                color: #64604f; 
+                font-size: 80px;
+            }
+                        
+            .activity{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-image: url(image/background2.png);
+                overflow: hidden; 
+                padding-right: 70px;
+            }
+
+            .textbox{
+                width: 650px;
+                margin-left: 120px;
+                align-items: center;
+            }
+
+            .textbox a{
+                border-radius: 10px;
+                display: inline-block;
+                margin-top: 30px;
+                padding: 10px 25px;
+                background: #64604f;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 530;
+                text-decoration: none;
+                position: relative;
+                cursor: pointer;
+                text-decoration: none;
+            }
+
+            .textbox a:hover{
+                border: 2px solid #64604fd0;
+                background: transparent;
+                color: #64604f;
+                font-weight: 550;
+            } 
+        </style>
+
+    </head>
+    <body>
+       <section class="activity">
+            <div class="textbox">
+                <h2 class="title">My favorite activity, <span>DANCING</span></h2>
+                <p style="font-size: 19px;">I regularly go to a dance studio or dance with my friends.
+                My favorite genre is choreography, but I also dance jazz and k-pop.
+                Dancing is a great way to clear the mind and boost mood. 
+                It is an accessible activity that requires no special equipment 
+                and is beneficial for both mental clarity and physical fitness, making it a fantastic choice for anyone.</p>
+                <a href="https://www.britannica.com/art/dance/Choreography">Learn more →</a>
+            </div>
+            <div style="flex-direction: column;">
+                <div class="video-container">
+                    <video src="video/dance4.mp4" class="video-slide video-slide-1" autoplay muted loop data-index="1"></video>
+                    <video src="video/dance3.mp4" class="video-slide video-slide-2" autoplay muted loop data-index="2"></video>
+                    <video src="video/dance.mp4" class="video-slide video-slide-3" autoplay muted loop data-index="3"></video>
+                    <video src="video/dance2.mp4" class="video-slide video-slide-4" autoplay muted loop data-index="4"></video>
+                    <video src="video/dance5.mp4" class="video-slide video-slide-5" autoplay muted loop data-index="5"></video>
+                </div>
+                <div class="video-controls">
+            </div>
+        </section>
+       <script src="script.js"></script>
+    </body>
+</html>

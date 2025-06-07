@@ -1,0 +1,56 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ina Song - Assignment2</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .header-container {
+            height: 10%;
+            box-shadow: 0 12px 12px -10px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .content-container {
+            flex-grow: 1;
+            height: 90%;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                height: 15%;
+            }
+
+            .content-container {
+                height: 85%;
+            }
+
+            body {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <iframe src="html&css/header.html" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <div class="content-container">
+        <iframe src="html&css/main page.html" name="content-frame" id="content-frame"></iframe>
+    </div>
+
+</body>
+</html>
